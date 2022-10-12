@@ -12,7 +12,8 @@ function TodoSearch({searchValue,setSearchValue}){
         className="TodoSearch"
         placeholder="Cebolla"
         value={searchValue}
-        onChange={onSearchValueChange}/>
+        onChange={onSearchValueChange}/> //this is the importante, review the change
     )
 }
 export {TodoSearch};
+
