@@ -15,5 +15,4 @@ function TodoSearch({searchValue,setSearchValue}){
         onChange={onSearchValueChange}/> //this is the importante, review the change
     )
 }
-export {TodoSearch};
-
+export {TodoSearch}
