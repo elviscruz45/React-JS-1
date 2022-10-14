@@ -12,6 +12,9 @@ const {
     error,
   }=useLocalStorage("TODOS_V1",[])
 
+  // modal
+  const[openModal,setOpenModal]=React.useState(false)
+
   //Todo counter
   const totalTodos=todos.length
   const completedTodos=todos.filter(todo=>!!todo.completed).length
@@ -66,6 +69,8 @@ const {
                 searchedTodos,
                 completeTodos,
                 deleteTodo,
+                openModal,
+                setOpenModal,
             }
         }>
             {props.children}
