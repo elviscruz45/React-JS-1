@@ -43,6 +43,28 @@ const {
     //   completed:true,
     // }
   }
+
+
+
+  const addTodos=(text)=>{
+    const newTodos=[...todos]
+    newTodos.push({
+      completed:false,
+      text,
+    })
+    saveTodos(newTodos)
+    // todos[todoIndex]={
+    //   text:todos[todoIndex].text,
+    //   completed:true,
+    // }
+  }
+
+
+
+
+
+
+
   const deleteTodo=(text)=>{
     const todoIndex=todos.findIndex(todo=>todo.text===text)
     const newTodos=[...todos]
@@ -67,6 +89,7 @@ const {
                 searchValue,
                 setSearchValue,
                 searchedTodos,
+                addTodos,
                 completeTodos,
                 deleteTodo,
                 openModal,

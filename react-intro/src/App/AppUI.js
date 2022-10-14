@@ -4,6 +4,8 @@ import {TodoCounter} from "../TodoCounter"
 import {TodoSearch} from "../TodoSearch/index.js"
 import {TodoList} from "../TodoList/index.js"
 import {TodoItem} from "../TodoItem/index.js"
+import {TodoForm} from "../TodoForm/index.js"
+
 import {CreateTodoButton} from "../CreateTodoButton/index.js"
 
 import {Modal} from "../Modal/index.js"
@@ -43,10 +45,10 @@ function AppUI(){
         
             {!!openModal && (
             <Modal>
-                <p> {searchedTodos[0]?.text}</p>
+                <TodoForm/>
             </Modal>
             )}
-            
+
           <CreateTodoButton
             setOpenModal={setOpenModal}
           />
